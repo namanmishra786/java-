@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        String str = "this is orange juice";
+        String str2 = "orange";
+        for (char i : str.toCharArray()) {
+            for (char j : str2.toCharArray()) {
+                if (i == j) {
+                    System.out.println("found that");
+                    break; // break out of the inner loop once a match is found
+                }
+            }
+        }
+        System.out.println("Hello World");
+    }
+}
