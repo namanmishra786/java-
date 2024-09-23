@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        int first = 0;
+        int last = 0;
+        String str = "NAmAn";
+        
+        for (int i = 0; i < str.length(); i++) {
+            if ('A' == str.charAt(i)) {
+                first = i;
+            }
+        }
+        
+        for (int j = str.length() - 1; j >= 0; j--) {
+            if ('A' == str.charAt(j)) {
+                last = j;
+                break; // terminate the loop once 'A' is found
+            }    
+        }
+        
+        System.out.println("first =" + first + " last =" + last);
+    }
+}
